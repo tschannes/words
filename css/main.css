@@ -1,0 +1,36 @@
+.frame{
+	height:200px;
+	overflow:hidden;
+}
+img{
+  width:100%;
+}
+.demo{
+	color:red;
+}
+.posts{
+	list-style:none;
+}
+.posts li {
+	padding-bottom:1em;
+}
+.side-nav{
+	background-color:#1978ac;
+	padding:0.5em;
+}
+.side-nav li h5 a{
+	opacity:0.5;
+}
+.side-nav li a{
+	color:white;
+	text-transform:uppercase;
+}
+.side-nav li h5 a.active{
+	opacity:1 !important;
+}
+body{
+	background-color:#1978ac;
+}
+.small-12.medium-9.columns{
+	background-color:white;
+}

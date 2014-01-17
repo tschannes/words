@@ -1,14 +1,27 @@
 ---
 layout: words
-title: tschannes words
-description: This is my first amazing page.
+title: tschannes on words
+description: tschannes is a reader. He is also a writer, an avid surfer on the waves of the interwebs, a content and clarity enthusiast, an information strategist. All things considered, he is a man of words.
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
+      <li> 
+		
+		<div class="row">
+			<div class="small-12 medium-3 columns">
+				<div class="frame.front">
+					<img src="{{site.url}}/words/assets/{{post.img }}" alt="{{ post.title }}">
+				</div>
+			</div>
+			<div class="small-12 medium-9 columns">
+				<h4><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h4>
+				<p>{{post.lead}}</p>
+			</div>
+		</div>
+		
+      </li>
     {% endfor %}
   </ul>
 </div>
