@@ -1,36 +1,116 @@
-.frame{
-	height:200px;
-	overflow:hidden;
+
+body{
+  font-family:Georgia, serif;
+  font-size:20px;
+  margin-bottom:20px;
+  padding-top:5em;
+  margin:auto;
 }
-img{
+h1, h2, p, ul li{
+  line-height:1.5em;
+}
+#main{
   width:100%;
 }
-.demo{
-	color:red;
+.text-container{
+  background-color:white;
+  width:90%;
+  margin:auto;
 }
-.posts{
-	list-style:none;
+.img-container{
+  background: url('bg2.png') repeat;
+  width:100%;
+  position:relative;
 }
-.posts li {
-	padding-bottom:1em;
+h1{
+  font-size:2em;
 }
-.side-nav{
-	background-color:#1978ac;
-	padding:0.5em;
+h2{
+  font-size:1.5em;
 }
-.side-nav li h5 a{
-	opacity:0.5;
+img, video{
+  position:relative;
+  width:100%;
+  height:auto;
+  z-index:-1;
 }
-.side-nav li a{
-	color:white;
-	text-transform:uppercase;
+p{
+  font-family: 'Open Sans', sans-serif;
 }
-.side-nav li h5 a.active{
-	opacity:1 !important;
+.special{
+  font-family: 'Georgia', serif;
+  color:white;
+  z-index:-1;
+  font-size:4em;
+  position:absolute;
+  top:0;
+  left:5%;
+  right:5%;
 }
-body{
-	background-color:#1978ac;
+nav{
+  background-color:white;
+  padding-top:0.5em;
+  padding-bottom: 0.5em;
+  max-height:3em;
+  position:fixed;
+  top:0;
+  width:100%;
+  -webkit-box-shadow: 0px 10px 13px 0px rgba(50, 50, 50, 0.63);
+  -moz-box-shadow:    0px 10px 13px 0px rgba(50, 50, 50, 0.63);
+  box-shadow:         0px 10px 13px 0px rgba(50, 50, 50, 0.63);
+  z-index:3;
 }
-.small-12.medium-9.columns{
-	background-color:white;
+nav ul li{
+  list-style:none;
+  font-size:1.2em;
+  display:inline;
+  opacity:0.9;
+  float:left;
+  padding-right:5%;
+
+}
+#logo{
+  height:3em;
+  width:3em;
+  float:left;
+  padding-left:5%;
+  padding-right:5%;
+}
+@media (max-width: 600px) {
+  body {
+    font-size:16px;
+  }
+  .special{
+    font-size:2em;
+  }
+}
+@media (min-width:1200px) {
+  body{
+    font-size:28px;
+    padding-top:2.5em;
+  }
+  #main{
+    width:70%;
+    float:right;
+  }
+  nav{
+    width:30%;
+    min-height:100%;
+    overflow-y:normal;
+  }
+  nav ul li{
+    display:block;
+    float:none;
+    text-align:center;
+  }
+  #logo{
+    float:none;
+    height:auto;
+    display:block;
+    width:60%;
+    margin:auto;
+  }
+  .text-container{
+    width:70%;
+  }
 }
