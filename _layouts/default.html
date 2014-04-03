@@ -11,34 +11,31 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link rel="icon"
+          type="image/png"
+          href="logo2.png">
 
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+        <nav>
+        <div id="logo">
+          <img src="logo2.png" alt="{{site.name}}" />
         </div>
+        <ul>
+          <li>
+            Interests
+          </li>
+          <li>Projects</li>
+          <li>CV</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      <div id="main">
+          {{ content }}
+      </div>
 
     </body>
 </html>
