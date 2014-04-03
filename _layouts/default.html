@@ -1,41 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-        <link rel="icon"
-          type="image/png"
-          href="logo2.png">
-
-    </head>
-    <body>
-
-        <nav>
-        <div id="logo">
-          <img src="logo2.png" alt="{{site.name}}" />
-        </div>
-        <ul>
-          <li>
-            Interests
-          </li>
-          <li>Projects</li>
-          <li>CV</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+{{ head }}
+{{ nav }}
 
       <div id="main">
           {{ content }}
       </div>
 
-    </body>
-</html>
+{{ foot }}

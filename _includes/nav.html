@@ -1,10 +1,12 @@
-<nav class="nav-primary" role="navigation" >
-    <ul class="side-nav">
-
+<nav>
+    <ul>
+        <div id="logo">
+          <img src="logo2.png" alt="{{site.name}}" />
+        </div>
         {% for p in site.pages %}
-        <li><h5>
+        <li>
         	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-        </h5></li>
+        </li>
         {% endfor %}
     </ul>
 </nav>
